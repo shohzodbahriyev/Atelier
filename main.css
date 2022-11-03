@@ -58,6 +58,10 @@
   color: #ffae2b;
 }
 
+.hamburger {
+  display: none;
+}
+
 .template {
   font-style: normal;
   font-weight: 400;
@@ -75,6 +79,7 @@
 /* HERO */
 
 .hero {
+  max-width: 100%;
   background-image: url(./images/wheat.png);
   padding: 120px 0 200px;
 }
@@ -163,6 +168,16 @@
   align-items: center;
   border: 1px solid #4b4136;
   margin: 10px 0;
+}
+
+.example p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 /* PICTURE */
@@ -501,8 +516,133 @@
   text-decoration: none;
 }
 
-.links hr{
+.links hr {
   max-width: 4px;
   max-height: 30px;
-  background: #4B4136;
+  background: #4b4136;
+}
+
+/* ---------- MEDIA VERSION ---------- */
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+  .hero {
+    width: 100%;
+  }
+  .example img {
+    max-width: 100%;
+  }
+  .services {
+    max-width: 100%;
+  }
+  .services .design {
+    max-width: 33.3%;
+  }
+  .section3 {
+    display: none;
+  }
+  .footer {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 100%;
+  }
+  .services {
+    max-width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+  .services .design {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    width: 100%;
+  }
+  .nav_list {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .lists {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .lists .example {
+    width: 50%;
+  }
+  .picture {
+    max-width: 100%;
+    max-height: 400px;
+  }
+  .services {
+    max-width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+  .services .design {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+  .lists {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .lists .example {
+    width: 100%;
+  }
+  .section1 h1 {
+    max-width: 100%;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .picture {
+    max-width: 100%;
+    max-height: 200px;
+  }
+}
+
+@media screen and (max-width: 305px) {
+  .container {
+    width: 100%;
+  }
+  .hero h1 {
+    max-width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: left;
+  }
+  .section2 h1 {
+    max-width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: left;
+  }
+  .services .design {
+    padding: 20px 47px 26px 20px;
+  }
 }
